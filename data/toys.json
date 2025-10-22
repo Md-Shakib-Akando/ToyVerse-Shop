@@ -94,5 +94,101 @@
         "description": "A soft and cuddly teddy bear, perfect for hugging, comforting, and imaginative play.",
         "pictureURL": "https://i.ibb.co/JFSm53fn/fluffy-toy-texture-close-up.jpg",
         "subCategory": "Stuffed Animals"
+    },
+    {
+        "toyId": 9,
+        "toyName": "Lego Classic Bricks",
+        "sellerName": "Toys R Us Local",
+        "sellerEmail": "contact@toysruslocal.com",
+        "price": 49.99,
+        "rating": 4.7,
+        "availableQuantity": 75,
+        "description": "A timeless set of colorful Lego bricks that encourages creativity and problem-solving. Kids can build anything they imagine, from houses to vehicles.",
+        "pictureURL": "https://i.ibb.co/rKmS4nGC/cute-plush-toys-arrangement.jpg",
+        "subCategory": "Building Blocks"
+    },
+    {
+        "toyId": 10,
+        "toyName": "Barbie Dreamhouse",
+        "sellerName": "FunToys Shop",
+        "sellerEmail": "info@funtoys.com",
+        "price": 129.99,
+        "rating": 4.5,
+        "availableQuantity": 20,
+        "description": "A luxurious dollhouse for Barbie dolls with multiple rooms and accessories, perfect for imaginative play.",
+        "pictureURL": "https://i.ibb.co/JFSm53fn/fluffy-toy-texture-close-up.jpg",
+        "subCategory": "Dolls"
+    },
+    {
+        "toyId": 11,
+        "toyName": "Hot Wheels Race Track",
+        "sellerName": "Speedy Toys",
+        "sellerEmail": "support@speedytoys.com",
+        "price": 39.99,
+        "rating": 4.6,
+        "availableQuantity": 50,
+        "description": "A thrilling race track set for Hot Wheels cars, including loops, jumps, and stunts for endless fun.",
+        "pictureURL": "https://i.ibb.co/rKmS4nGC/cute-plush-toys-arrangement.jpg",
+        "subCategory": "Vehicles"
+    },
+    {
+        "toyId": 12,
+        "toyName": "Crayola Art Set",
+        "sellerName": "Creative Kids Store",
+        "sellerEmail": "contact@creativekids.com",
+        "price": 24.99,
+        "rating": 4.8,
+        "availableQuantity": 100,
+        "description": "A complete art set with crayons, markers, and paints to spark creativity and artistic skills in kids.",
+        "pictureURL": "https://i.ibb.co/JFSm53fn/fluffy-toy-texture-close-up.jpg",
+        "subCategory": "Art & Craft"
+    },
+    {
+        "toyId": 13,
+        "toyName": "Fisher-Price Musical Guitar",
+        "sellerName": "MusicToys",
+        "sellerEmail": "hello@musictoys.com",
+        "price": 29.99,
+        "rating": 4.4,
+        "availableQuantity": 60,
+        "description": "A colorful toy guitar with lights and sounds, designed to introduce music and rhythm to young children.",
+        "pictureURL": "https://i.ibb.co/rKmS4nGC/cute-plush-toys-arrangement.jpg",
+        "subCategory": "Musical Toys"
+    },
+    {
+        "toyId": 14,
+        "toyName": "RC Monster Truck",
+        "sellerName": "RemoteFun",
+        "sellerEmail": "sales@remotefun.com",
+        "price": 59.99,
+        "rating": 4.3,
+        "availableQuantity": 35,
+        "description": "A remote-controlled monster truck with rugged wheels and high-speed action for outdoor fun.",
+        "pictureURL": "https://i.ibb.co/JFSm53fn/fluffy-toy-texture-close-up.jpg",
+        "subCategory": "Vehicles"
+    },
+    {
+        "toyId": 15,
+        "toyName": "Puzzle World Map",
+        "sellerName": "Brainy Kids",
+        "sellerEmail": "info@brainykids.com",
+        "price": 19.99,
+        "rating": 4.9,
+        "availableQuantity": 80,
+        "description": "A world map puzzle that helps children learn geography while developing problem-solving and spatial skills.",
+        "pictureURL": "https://i.ibb.co/rKmS4nGC/cute-plush-toys-arrangement.jpg",
+        "subCategory": "Educational"
+    },
+    {
+        "toyId": 16,
+        "toyName": "Stuffed Teddy Bear",
+        "sellerName": "Cuddly Toys",
+        "sellerEmail": "contact@cuddlytoys.com",
+        "price": 14.99,
+        "rating": 4.7,
+        "availableQuantity": 120,
+        "description": "A soft and cuddly teddy bear, perfect for hugging, comforting, and imaginative play.",
+        "pictureURL": "https://i.ibb.co/JFSm53fn/fluffy-toy-texture-close-up.jpg",
+        "subCategory": "Stuffed Animals"
     }
 ]

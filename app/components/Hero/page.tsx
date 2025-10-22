@@ -6,8 +6,8 @@ import Img3 from '../../../public/assets/iamge-3.jpg'
 import Img4 from '../../../public/assets/image-4.png'
 export default function Hero() {
     return (
-        <div>
-            <div className="carousel lg:h-[700px] w-full">
+        <div data-aos="fade-up" >
+            < div className="carousel lg:h-[700px] w-full" >
                 <div id="slide1" className="carousel-item relative w-full">
                     <Image src={Img1} alt="Image 1" className="w-full object-cover" />
                     <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
@@ -36,7 +36,7 @@ export default function Hero() {
                         <a href="#slide1" className="btn btn-circle">❯</a>
                     </div>
                 </div>
-            </div>
-        </div>
+            </div >
+        </div >
     )
 }

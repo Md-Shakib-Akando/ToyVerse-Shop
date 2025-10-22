@@ -1,5 +1,6 @@
 @import "tailwindcss";
 @plugin "daisyui";
+@import "aos/dist/aos.css";
 
 :root {
   --background: #ffffff;
