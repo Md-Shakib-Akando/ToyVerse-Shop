@@ -4,6 +4,7 @@ import InfoSection from "./components/DeliveryInfo/page";
 import FlashSale from "./components/FlashSale/page";
 import Hero from "./components/Hero/page";
 import ToyCard from "./components/PopularToy/page";
+import DiscountToys from "./components/DiscounToys/page";
 
 
 export default function Home() {
@@ -20,6 +21,9 @@ export default function Home() {
       </div>
       <div>
         <FlashSale></FlashSale>
+      </div>
+      <div className="max-w-11/12 mx-auto">
+        <DiscountToys></DiscountToys>
       </div>
       <div className="mt-5 max-w-11/12 mx-auto pb-10">
         <h1 className=" font-bold text-xl md:text-3xl   mb-12 mt-8">Popular Toys</h1>

@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import logo from "../../../public/assets/logo.png";
-import { FaBars, FaTimes } from "react-icons/fa";
+import { FaBars, FaShoppingCart, FaTimes } from "react-icons/fa";
 
 export default function Nav() {
     const [menuOpen, setMenuOpen] = useState(false);
@@ -23,8 +23,17 @@ export default function Nav() {
                     <Link href="/" className="hover:text-[#9F62F2] transition font-semibold">
                         Home
                     </Link>
-                    <Link href="/profile" className="hover:text-[#9F62F2] transition font-semibold">
-                        My Profile
+                    <Link href="/allToys" className="hover:text-[#9F62F2] transition font-semibold">
+                        All Toys
+                    </Link>
+                    <Link href="/how-to-buy" className="hover:text-[#9F62F2] transition font-semibold">
+                        How To Buy
+                    </Link>
+                    <Link href="/about" className="hover:text-[#9F62F2] transition font-semibold">
+                        About Us
+                    </Link>
+                    <Link href="/contact" className="hover:text-[#9F62F2] transition font-semibold">
+                        Contact
                     </Link>
 
 
@@ -32,9 +41,12 @@ export default function Nav() {
 
                 </nav>
                 <div className="hidden md:block">
-                    <Link href="/login" className="btn bg-[#FFF5E1] border border-[#632EE3] text-[#632EE3] hover:bg-[#632EE3] hover:text-white transition font-semibold">
-                        Login
-                    </Link>
+                    <div className="flex items-center gap-2">
+                        <FaShoppingCart size={24}></FaShoppingCart>
+                        <Link href="/login" className="btn bg-[#FFF5E1] border border-[#632EE3] text-[#632EE3] hover:bg-[#632EE3] hover:text-white transition font-semibold">
+                            Login
+                        </Link>
+                    </div>
                 </div>
 
                 {/* Mobile Menu Button */}
