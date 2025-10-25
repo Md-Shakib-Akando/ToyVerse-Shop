@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import logo from "../../../public/assets/logo.png";
@@ -10,11 +10,34 @@ import Swal from "sweetalert2";
 import { useAuth } from "../Auth/AuthProvider";
 import { useRouter } from "next/navigation";
 
+
+type CartItem = {
+    id: number;
+    name: string;
+    price: number;
+    quantity: number;
+    image: string;
+    subCategory: string;
+};
 export default function Nav() {
     const [menuOpen, setMenuOpen] = useState(false);
     const [dropdownOpen, setDropdownOpen] = useState(false);
     const { user, loading } = useAuth();
     const router = useRouter();
+    const [cartCount, setCartCount] = useState(0);
+
+
+    const updateCartCount = () => {
+        const cart: CartItem[] = JSON.parse(localStorage.getItem("cart") || "[]");
+        const total = cart.reduce((acc, item) => acc + item.quantity, 0);
+        setCartCount(total);
+    };
+
+    useEffect(() => {
+        updateCartCount();
+        window.addEventListener("cartUpdated", updateCartCount);
+        return () => window.removeEventListener("cartUpdated", updateCartCount);
+    }, []);
 
     const handleLogout = async () => {
         try {
@@ -69,7 +92,15 @@ export default function Nav() {
 
 
                 <div className="hidden md:flex items-center gap-3 relative">
-                    <FaShoppingCart size={22} className="text-gray-700" />
+                    <Link href="/cart" className="text-[#9F62F2] hover:text-purple-600 transition relative">
+                        <FaShoppingCart size={24} />
+                        {cartCount > 0 && (
+                            <span className="absolute -top-2 -right-2 bg-red-500 text-white text-xs w-5 h-5 flex items-center justify-center rounded-full">
+                                {cartCount}
+                            </span>
+                        )}
+
+                    </Link>
 
 
                     {!loading && user ? (
