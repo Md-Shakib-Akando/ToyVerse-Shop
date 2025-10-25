@@ -4,6 +4,7 @@ import "./globals.css";
 import Nav from "./components/Navbar/page";
 import Footer from "./components/Footer/page";
 import AOSInitializer from "./components/AosInitializer/page";
+import AuthProvider from "./components/Auth/AuthProvider";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -31,9 +32,11 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <AOSInitializer></AOSInitializer>
-        <Nav></Nav>
-        {children}
-        <Footer></Footer>
+        <AuthProvider>
+          <Nav></Nav>
+          {children}
+          <Footer></Footer>
+        </AuthProvider>
       </body>
     </html>
   );

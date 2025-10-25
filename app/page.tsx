@@ -31,7 +31,7 @@ export default function Home() {
           <ToyCard></ToyCard>
         </div>
         <div className="flex justify-center mt-8">
-          <Link href="/toys" className=" text-purple-500 text-lg underline px-6 py-3 rounded-xl font-semibold transition hover:cursor-pointer">View More Toys</Link>
+          <Link href="/allToys" className=" text-purple-500 text-lg underline px-6 py-3 rounded-xl font-semibold transition hover:cursor-pointer">View More Toys</Link>
         </div>
       </div>
     </div>
